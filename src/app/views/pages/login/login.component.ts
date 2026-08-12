@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 import { IconDirective } from '@coreui/icons-angular';
 import {
@@ -19,4 +20,10 @@ import {
   templateUrl: './login.component.html',
   imports: [ContainerComponent, RowComponent, ColComponent, CardGroupComponent, CardComponent, CardBodyComponent, FormDirective, InputGroupComponent, InputGroupTextDirective, IconDirective, FormControlDirective, ButtonDirective]
 })
-export class LoginComponent {}
+export class LoginComponent {
+   constructor(private router: Router) {}
+
+  login() {
+    this.router.navigate(['/dashboard']);
+  }
+}
