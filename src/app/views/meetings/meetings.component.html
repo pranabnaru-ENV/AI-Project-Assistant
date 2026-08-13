@@ -1,1 +1,169 @@
-<p>meetings works!</p>
+<c-row>
+  <c-col xs>
+
+    <div class="d-flex justify-content-end mb-3">
+      <a routerLink="/meetings/add" class="btn btn-outline-primary">
+        + Add Meeting
+      </a>
+    </div>
+
+    <c-card class="mb-4">
+
+      <c-card-body>
+
+        <table
+          [hover]="true"
+          [responsive]="true"
+          [striped]="true"
+          align="middle"
+          cTable
+          class="mb-0 border"
+        >
+
+          <thead class="text-nowrap">
+            <tr>
+
+              <th class="bg-body-tertiary">
+                Meeting Title
+              </th>
+
+              <th class="bg-body-tertiary">
+                Project
+              </th>
+
+              <th class="bg-body-tertiary">
+                Client
+              </th>
+
+              <th class="bg-body-tertiary text-center">
+                Date & Time
+              </th>
+
+              <th class="bg-body-tertiary">
+                Platform
+              </th>
+
+              <th class="bg-body-tertiary text-center">
+                Participants
+              </th>
+
+              <th class="bg-body-tertiary text-center">
+                Status
+              </th>
+
+              <th class="bg-body-tertiary text-center">
+                AI Status
+              </th>
+
+              <th class="bg-body-tertiary text-center">
+                Edit
+              </th>
+
+            </tr>
+          </thead>
+
+          <tbody>
+
+            @for (meeting of meetings; track meeting.id) {
+
+              <tr>
+
+                <!-- Meeting Title -->
+                <td>
+                  <div class="fw-semibold">
+                    {{ meeting.title }}
+                  </div>
+
+                  <div class="small text-body-secondary text-nowrap">
+                    {{ meeting.meetingType }}
+                  </div>
+                </td>
+
+                <!-- Project -->
+                <td>
+                  {{ meeting.project }}
+                </td>
+
+                <!-- Client -->
+                <td>
+                  {{ meeting.client }}
+                </td>
+
+                <!-- Date & Time -->
+                <td class="text-center">
+                  <div class="fw-semibold">
+                    {{ meeting.date }}
+                  </div>
+
+                  <div class="small text-body-secondary">
+                    {{ meeting.time }}
+                  </div>
+                </td>
+
+                <!-- Platform -->
+                <td>
+                  {{ meeting.platform }}
+                </td>
+
+                <!-- Participants -->
+                <td class="text-center">
+                  {{ meeting.participants }}
+                </td>
+
+                <!-- Meeting Status -->
+                <td class="text-center">
+
+                  <span
+                    class="badge"
+                    [class.bg-success]="meeting.status === 'Completed'"
+                    [class.bg-warning]="meeting.status === 'Upcoming'"
+                    [class.bg-secondary]="meeting.status === 'Cancelled'"
+                  >
+                    {{ meeting.status }}
+                  </span>
+
+                </td>
+
+                <!-- AI Status -->
+                <td class="text-center">
+
+                  <span
+                    class="badge"
+                    [class.bg-success]="meeting.aiStatus === 'Completed'"
+                    [class.bg-warning]="meeting.aiStatus === 'Processing'"
+                    [class.bg-secondary]="meeting.aiStatus === 'Not Started'"
+                    [class.bg-danger]="meeting.aiStatus === 'Failed'"
+                  >
+                    {{ meeting.aiStatus }}
+                  </span>
+
+                </td>
+
+                <!-- Edit -->
+                <td class="text-center">
+
+                  <button
+                    cButton
+                    class="px-4"
+                    color="primary"
+                    type="button"
+                  >
+                    Edit
+                  </button>
+
+                </td>
+
+              </tr>
+
+            }
+
+          </tbody>
+
+        </table>
+
+      </c-card-body>
+
+    </c-card>
+
+  </c-col>
+</c-row>

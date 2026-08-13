@@ -54,6 +54,10 @@ export const routes: Routes = [
         loadChildren: () => import('./views/projects/routes').then((m) => m.routes)
       },
       {
+        path: 'meetings',
+        loadChildren: () => import('./views/meetings/routes').then((m) => m.routes)
+      },
+      {
         path: 'pages',
         loadChildren: () => import('./views/pages/routes').then((m) => m.routes)
       }

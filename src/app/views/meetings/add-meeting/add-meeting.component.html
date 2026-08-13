@@ -1,0 +1,293 @@
+<c-row>
+  <c-col xs>
+
+    <c-card class="mb-4">
+
+      <c-card-header>
+        <strong>Add New Meeting</strong>
+      </c-card-header>
+
+      <c-card-body>
+
+        <form>
+
+          <!-- Meeting Title -->
+          <div class="mb-3">
+            <label class="form-label">
+              Meeting Title
+            </label>
+
+            <input
+              cFormControl
+              type="text"
+              placeholder="e.g., Client Requirement Discussion"
+            />
+          </div>
+
+
+          <!-- Project & Client -->
+          <c-row>
+
+            <c-col md="6">
+
+              <div class="mb-3">
+
+                <label class="form-label">
+                  Project
+                </label>
+
+                <select cSelect>
+                  <option value="">
+                    Select a project...
+                  </option>
+
+                  <option>
+                    AI Project Assistant
+                  </option>
+
+                  <option>
+                    CRM Implementation
+                  </option>
+
+                  <option>
+                    Client Portal
+                  </option>
+
+                </select>
+
+              </div>
+
+            </c-col>
+
+
+            <c-col md="6">
+
+              <div class="mb-3">
+
+                <label class="form-label">
+                  Client
+                </label>
+
+                <select cSelect>
+
+                  <option value="">
+                    Select a client...
+                  </option>
+
+                  <option>
+                    ABC Technologies
+                  </option>
+
+                  <option>
+                    XYZ Technologies
+                  </option>
+
+                </select>
+
+              </div>
+
+            </c-col>
+
+          </c-row>
+
+
+          <!-- Date & Time -->
+          <c-row>
+
+            <c-col md="6">
+
+              <div class="mb-3">
+
+                <label class="form-label">
+                  Meeting Date
+                </label>
+
+                <input
+                  cFormControl
+                  type="date"
+                />
+
+              </div>
+
+            </c-col>
+
+
+            <c-col md="6">
+
+              <div class="mb-3">
+
+                <label class="form-label">
+                  Meeting Time
+                </label>
+
+                <input
+                  cFormControl
+                  type="time"
+                />
+
+              </div>
+
+            </c-col>
+
+          </c-row>
+
+
+          <!-- Meeting Type & Platform -->
+          <c-row>
+
+            <c-col md="6">
+
+              <div class="mb-3">
+
+                <label class="form-label">
+                  Meeting Type
+                </label>
+
+                <select cSelect>
+
+                  <option value="">
+                    Select meeting type...
+                  </option>
+
+                  <option>
+                    Client Meeting
+                  </option>
+
+                  <option>
+                    Project Meeting
+                  </option>
+
+                  <option>
+                    Development Meeting
+                  </option>
+
+                  <option>
+                    QA Meeting
+                  </option>
+
+                  <option>
+                    Technical Meeting
+                  </option>
+
+                </select>
+
+              </div>
+
+            </c-col>
+
+
+            <c-col md="6">
+
+              <div class="mb-3">
+
+                <label class="form-label">
+                  Platform
+                </label>
+
+                <select cSelect>
+
+                  <option value="">
+                    Select platform...
+                  </option>
+
+                  <option>
+                    Microsoft Teams
+                  </option>
+
+                  <option>
+                    Zoom
+                  </option>
+
+                  <option>
+                    Google Meet
+                  </option>
+
+                </select>
+
+              </div>
+
+            </c-col>
+
+          </c-row>
+
+
+          <!-- Meeting Link -->
+          <div class="mb-3">
+
+            <label class="form-label">
+              Meeting Link
+            </label>
+
+            <input
+              cFormControl
+              type="url"
+              placeholder="https://teams.microsoft.com/..."
+            />
+
+          </div>
+
+
+          <!-- Participants -->
+          <div class="mb-3">
+
+            <label class="form-label">
+              Participants
+            </label>
+
+            <input
+              cFormControl
+              type="text"
+              placeholder="e.g., Kousik, Rahul, Client"
+            />
+
+            <div class="form-text">
+              Add the meeting participants.
+            </div>
+
+          </div>
+
+
+          <!-- Description -->
+          <div class="mb-4">
+
+            <label class="form-label">
+              Description
+            </label>
+
+            <textarea
+              cFormControl
+              rows="4"
+              placeholder="Enter meeting agenda or description..."
+            ></textarea>
+
+          </div>
+
+
+          <!-- Buttons -->
+          <div class="d-flex justify-content-end gap-2">
+
+            <a
+              routerLink="/meetings"
+              class="btn btn-outline-secondary"
+            >
+              Cancel
+            </a>
+
+            <button
+              cButton
+              color="primary"
+              type="submit"
+            >
+              Save Meeting
+            </button>
+
+          </div>
+
+        </form>
+
+      </c-card-body>
+
+    </c-card>
+
+  </c-col>
+</c-row>
