@@ -1,4 +1,3 @@
-
 <c-row>
   <c-col xs="12" lg="12">
     <c-card class="mb-4">
@@ -6,64 +5,129 @@
         <strong>Add New Project</strong>
       </c-card-header>
       <c-card-body>
+        
         <div class="p-4 bg-light border rounded">
-        <form cForm>
-          
-          <div class="mb-3">
-            <label cLabel for="projectName">Project Name</label>
-            <input cFormControl id="projectName" placeholder="e.g., Project Alpha" type="text" />
-          </div>
+          <form cForm>
+            
+            <!-- SECTION 1: GENERAL INFORMATION -->
+            <h5 class="mb-3 text-primary">General Information</h5>
+            
+            <c-row class="mb-3">
+              <c-col [md]="6">
+                <label cLabel for="projectName">Project Name</label>
+                <input cFormControl id="projectName" placeholder="e.g., CRM Overhaul" type="text" />
+              </c-col>
+              <c-col [md]="6">
+                <label cLabel for="projectCode">Project Code</label>
+                <input cFormControl id="projectCode" placeholder="e.g., CRM-001" type="text" />
+              </c-col>
+            </c-row>
 
-          <div class="mb-3">
-            <label cLabel for="location">Location (Country)</label>
-            <select cSelect id="location">
-              <option value="">Select a country...</option>
-              <option value="US">United States</option>
-              <option value="IN">India</option>
-              <option value="BR">Brazil</option>
-              <option value="FR">France</option>
-            </select>
-          </div>
+            <c-row class="mb-3">
+              <c-col [md]="6">
+                <label cLabel for="client">Client</label>
+                <input cFormControl id="client" placeholder="Customer or Internal Department" type="text" />
+              </c-col>
+              <c-col [md]="6">
+                <label cLabel for="projectManager">Project Manager</label>
+                <input cFormControl id="projectManager" placeholder="Name of Manager" type="text" />
+              </c-col>
+            </c-row>
 
-          <div class="mb-3">
-            <label cLabel for="status">Project Status</label>
-            <select cSelect id="status">
-              <option value="New">New</option>
-              <option value="Recurring">Recurring</option>
-              <option value="Sleep">Sleep</option>
-            </select>
-          </div>
-
-          <div class="mb-4">
-            <label cLabel for="usage">Usage / Completion (%)</label>
-            <input cFormControl id="usage" type="number" min="0" max="100" placeholder="0" />
-          </div>
-
-          <div class="mb-3">
-              <label cLabel for="exampleFormControlInput1">Email address</label>
-              <input cFormControl
-                     id="exampleFormControlInput1"
-                     placeholder="name@example.com"
-                     type="email"
-              />
-            </div>
             <div class="mb-3">
-              <label cLabel for="exampleFormControlTextarea1">Example textarea</label>
-              <textarea cFormControl id="exampleFormControlTextarea1" rows="3"></textarea>
+              <label cLabel for="projectDescription">Project Description</label>
+              <textarea cFormControl id="projectDescription" rows="3" placeholder="What the project is about..."></textarea>
             </div>
 
-          <div class="d-flex justify-content-end mt-4">
-            <!-- The Cancel button routes back to the main Projects page -->
-            <a cButton color="secondary" variant="ghost" class="me-2" routerLink="/projects">
-              Cancel
-            </a>
-            <button cButton color="primary" type="button">
-              Save Project
-            </button>
-          </div>
+            <c-row class="mb-4">
+              <c-col [md]="6">
+                <label cLabel for="status">Status</label>
+                <select cSelect id="status">
+                  <option value="Planning">Planning</option>
+                  <option value="Active">Active</option>
+                  <option value="On Hold">On Hold</option>
+                  <option value="Completed">Completed</option>
+                  <option value="Cancelled">Cancelled</option>
+                </select>
+              </c-col>
+              <c-col [md]="6">
+                <label cLabel for="priority">Priority</label>
+                <select cSelect id="priority">
+                  <option value="Low">Low</option>
+                  <option value="Medium">Medium</option>
+                  <option value="High">High</option>
+                  <option value="Critical">Critical</option>
+                </select>
+              </c-col>
+            </c-row>
 
-        </form>
+            <hr class="my-4" />
+
+            <!-- SECTION 2: TIMELINE -->
+            <h5 class="mb-3 text-primary">Timeline</h5>
+            
+            <c-row class="mb-3">
+              <c-col [md]="6">
+                <label cLabel for="startDate">Start Date</label>
+                <input cFormControl id="startDate" type="date" />
+              </c-col>
+              <c-col [md]="6">
+                <label cLabel for="expectedEndDate">Expected End Date</label>
+                <input cFormControl id="expectedEndDate" type="date" />
+              </c-col>
+            </c-row>
+
+            <c-row class="mb-4">
+              <c-col [md]="6">
+                <label cLabel for="actualEndDate">Actual End Date</label>
+                <input cFormControl id="actualEndDate" type="date" />
+              </c-col>
+              <c-col [md]="6">
+                <label cLabel for="currentSprint">Current Sprint</label>
+                <input cFormControl id="currentSprint" placeholder="e.g., Sprint 4" type="text" />
+              </c-col>
+            </c-row>
+
+            <hr class="my-4" />
+
+            <!-- SECTION 3: TEAM -->
+            <h5 class="mb-3 text-primary">Team</h5>
+            
+            <c-row class="mb-4">
+              <c-col [md]="6">
+                <label cLabel for="developers">Developers</label>
+                <select cSelect id="developers" multiple sizing="sm" style="height: 100px;">
+                  <option value="dev1">Alice Smith</option>
+                  <option value="dev2">Bob Johnson</option>
+                  <option value="dev3">Charlie Davis</option>
+                  <option value="dev4">Diana Evans</option>
+                </select>
+                <div class="form-text">Hold Ctrl (Windows) or Command (Mac) to select multiple.</div>
+              </c-col>
+              <c-col [md]="6">
+                <label cLabel for="qaMembers">QA Members</label>
+                <select cSelect id="qaMembers" multiple sizing="sm" style="height: 100px;">
+                  <option value="qa1">Eve Foster</option>
+                  <option value="qa2">Frank Green</option>
+                  <option value="qa3">Grace Harris</option>
+                </select>
+                <div class="form-text">Hold Ctrl (Windows) or Command (Mac) to select multiple.</div>
+              </c-col>
+            </c-row>
+
+            <!-- SUBMIT BUTTONS -->
+            <div class="d-flex justify-content-end mt-4">
+              <a cButton color="secondary" variant="ghost" class="me-2" routerLink="/projects">
+                Cancel
+              </a>
+              <button cButton color="primary" type="button">
+                Save Project
+              </button>
+            </div>
+
+          </form>
         </div>
+
       </c-card-body>
     </c-card>
   </c-col>
