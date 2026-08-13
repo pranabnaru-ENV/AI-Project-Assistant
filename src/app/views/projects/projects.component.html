@@ -1,5 +1,8 @@
 <c-row>
   <c-col xs>
+    <div class="d-flex justify-content-end mb-3">
+      <button cButton color="primary" variant="outline">+ Add Project</button>
+    </div>
     <c-card class="mb-4">
       <c-card-body>
         <table
@@ -13,13 +16,16 @@
           <thead class="text-nowrap text-truncate">
           <tr>
             <th class="bg-body-tertiary text-center ">
-              <svg cIcon name="cilPeople"></svg>
+              <!-- <svg cIcon name="cilPeople"></svg> -->
+               User
             </th>
-            <th class="bg-body-tertiary">User</th>
-            <th class="bg-body-tertiary text-center">Country</th>
-            <th class="bg-body-tertiary">Usage</th>
-            <th class="bg-body-tertiary text-center">Payment Method</th>
-            <th class="bg-body-tertiary">Activity</th>
+            <th class="bg-body-tertiary">Project Name</th>
+            <th class="bg-body-tertiary text-center">Location</th>
+            <th class="bg-body-tertiary text-center">Details</th>
+            <th class="bg-body-tertiary text-center">Status</th>
+            <th class="bg-body-tertiary text-center">Start Date</th>
+            <th class="bg-body-tertiary">Last Update</th>
+            <th class="bg-body-tertiary text-center">Edit</th>
           </tr>
           </thead>
           <tbody>
@@ -46,6 +52,11 @@
                   ></svg>
                 </td>
                 <td>
+                  <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  </div>
+                </td>
+                <td>
                   <div class="d-flex justify-content-between">
                     <div class="float-start">
                       <strong>{{ user.usage }}%</strong>
@@ -59,11 +70,14 @@
                   <c-progress thin [value]="user.usage" color="{{ user.color }}" aria-label="Usage" />
                 </td>
                 <td class="text-center">
-                  <svg cIcon name="cibCc{{ user.payment }}" size="xl"></svg>
+                  <div class="small text-body-secondary">20/05/26</div>
                 </td>
                 <td>
-                  <div class="small text-body-secondary">Last login</div>
+                  <div class="small text-body-secondary">Last Update</div>
                   <div class="fw-semibold text-nowrap">{{ user.activity }}</div>
+                </td>
+                <td>
+                  <svg cIcon name="cilColorBorder" size="xl" title="Color Border"></svg>
                 </td>
               </tr>
             }
