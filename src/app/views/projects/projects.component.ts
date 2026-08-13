@@ -1,4 +1,5 @@
 import { Component, DestroyRef, DOCUMENT, effect, inject, OnInit, Renderer2, signal, WritableSignal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import {
   AvatarComponent,
   ButtonDirective,
@@ -33,6 +34,7 @@ interface IUser {
 @Component({
   selector: 'app-projects',
   imports: [
+    RouterLink,
     AvatarComponent,
   ButtonDirective,
   ButtonGroupComponent,

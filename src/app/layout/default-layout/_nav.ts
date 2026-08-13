@@ -210,153 +210,153 @@ export const navItems: INavData[] = [
   //     }
   //   ]
   // },
-  // {
-  //   name: 'Forms',
-  //   url: '/forms',
-  //   iconComponent: { name: 'cil-notes' },
-  //   children: [
-  //     {
-  //       name: 'Autocomplete',
-  //       url: 'https://coreui.io/angular/docs/forms/autocomplete/',
-  //       icon: 'nav-icon-bullet',
-  //       badge: {
-  //         color: 'danger',
-  //         text: 'PRO'
-  //       },
-  //       attributes: { target: '_blank' }
-  //     },
-  //     {
-  //       name: 'Form Control',
-  //       url: '/forms/form-control',
-  //       icon: 'nav-icon-bullet'
-  //     },
-  //     {
-  //       name: 'Checks & Radios',
-  //       url: '/forms/checks-radios',
-  //       icon: 'nav-icon-bullet'
-  //     },
-  //     {
-  //       name: 'Date Picker',
-  //       url: 'https://coreui.io/angular/docs/forms/date-picker/',
-  //       icon: 'nav-icon-bullet',
-  //       badge: {
-  //         color: 'danger',
-  //         text: 'PRO'
-  //       },
-  //       attributes: { target: '_blank' }
-  //     },
-  //     {
-  //       name: 'Date Range Picker',
-  //       url: 'https://coreui.io/angular/docs/forms/date-range-picker/',
-  //       icon: 'nav-icon-bullet',
-  //       badge: {
-  //         color: 'danger',
-  //         text: 'PRO'
-  //       },
-  //       attributes: { target: '_blank' }
-  //     },
-  //     {
-  //       name: 'Floating Labels',
-  //       url: '/forms/floating-labels',
-  //       icon: 'nav-icon-bullet'
-  //     },
-  //     {
-  //       name: 'Input Group',
-  //       url: '/forms/input-group',
-  //       icon: 'nav-icon-bullet'
-  //     },
-  //     {
-  //       name: 'Multi Select',
-  //       url: 'https://coreui.io/angular/docs/forms/multi-select/',
-  //       icon: 'nav-icon-bullet',
-  //       badge: {
-  //         color: 'danger',
-  //         text: 'PRO'
-  //       },
-  //       attributes: { target: '_blank' }
-  //     },
-  //     {
-  //       name: 'OTP Input',
-  //       url: 'https://coreui.io/angular/docs/forms/otp/',
-  //       icon: 'nav-icon-bullet',
-  //       badge: {
-  //         color: 'danger',
-  //         text: 'PRO'
-  //       },
-  //       attributes: { target: '_blank' }
-  //     },
-  //     {
-  //       name: 'Password Input',
-  //       url: 'https://coreui.io/angular/docs/forms/password-input/',
-  //       icon: 'nav-icon-bullet',
-  //       badge: {
-  //         color: 'danger',
-  //         text: 'PRO'
-  //       },
-  //       attributes: { target: '_blank' }
-  //     },
-  //     {
-  //       name: 'Range',
-  //       url: '/forms/range',
-  //       icon: 'nav-icon-bullet'
-  //     },
-  //     {
-  //       name: 'Range Slider',
-  //       url: 'https://coreui.io/angular/docs/forms/range-slider/',
-  //       icon: 'nav-icon-bullet',
-  //       badge: {
-  //         color: 'danger',
-  //         text: 'PRO'
-  //       },
-  //       attributes: { target: '_blank' }
-  //     },
-  //     {
-  //       name: 'Rating',
-  //       url: 'https://coreui.io/angular/docs/forms/rating/',
-  //       icon: 'nav-icon-bullet',
-  //       badge: {
-  //         color: 'danger',
-  //         text: 'PRO'
-  //       },
-  //       attributes: { target: '_blank' }
-  //     },
-  //     {
-  //       name: 'Select',
-  //       url: '/forms/select',
-  //       icon: 'nav-icon-bullet'
-  //     },
-  //     {
-  //       name: 'Stepper',
-  //       url: 'https://coreui.io/angular/docs/forms/stepper/',
-  //       icon: 'nav-icon-bullet',
-  //       badge: {
-  //         color: 'danger',
-  //         text: 'PRO'
-  //       },
-  //       attributes: { target: '_blank' }
-  //     },
-  //     {
-  //       name: 'Time Picker',
-  //       url: 'https://coreui.io/angular/docs/forms/time-picker/',
-  //       icon: 'nav-icon-bullet',
-  //       badge: {
-  //         color: 'danger',
-  //         text: 'PRO'
-  //       },
-  //       attributes: { target: '_blank' }
-  //     },
-  //     {
-  //       name: 'Layout',
-  //       url: '/forms/layout',
-  //       icon: 'nav-icon-bullet'
-  //     },
-  //     {
-  //       name: 'Validation',
-  //       url: '/forms/validation',
-  //       icon: 'nav-icon-bullet'
-  //     }
-  //   ]
-  // },
+  {
+    name: 'Forms',
+    url: '/forms',
+    iconComponent: { name: 'cil-notes' },
+    children: [
+      {
+        name: 'Autocomplete',
+        url: 'https://coreui.io/angular/docs/forms/autocomplete/',
+        icon: 'nav-icon-bullet',
+        badge: {
+          color: 'danger',
+          text: 'PRO'
+        },
+        attributes: { target: '_blank' }
+      },
+      {
+        name: 'Form Control',
+        url: '/forms/form-control',
+        icon: 'nav-icon-bullet'
+      },
+      {
+        name: 'Checks & Radios',
+        url: '/forms/checks-radios',
+        icon: 'nav-icon-bullet'
+      },
+      {
+        name: 'Date Picker',
+        url: 'https://coreui.io/angular/docs/forms/date-picker/',
+        icon: 'nav-icon-bullet',
+        badge: {
+          color: 'danger',
+          text: 'PRO'
+        },
+        attributes: { target: '_blank' }
+      },
+      {
+        name: 'Date Range Picker',
+        url: 'https://coreui.io/angular/docs/forms/date-range-picker/',
+        icon: 'nav-icon-bullet',
+        badge: {
+          color: 'danger',
+          text: 'PRO'
+        },
+        attributes: { target: '_blank' }
+      },
+      {
+        name: 'Floating Labels',
+        url: '/forms/floating-labels',
+        icon: 'nav-icon-bullet'
+      },
+      {
+        name: 'Input Group',
+        url: '/forms/input-group',
+        icon: 'nav-icon-bullet'
+      },
+      {
+        name: 'Multi Select',
+        url: 'https://coreui.io/angular/docs/forms/multi-select/',
+        icon: 'nav-icon-bullet',
+        badge: {
+          color: 'danger',
+          text: 'PRO'
+        },
+        attributes: { target: '_blank' }
+      },
+      {
+        name: 'OTP Input',
+        url: 'https://coreui.io/angular/docs/forms/otp/',
+        icon: 'nav-icon-bullet',
+        badge: {
+          color: 'danger',
+          text: 'PRO'
+        },
+        attributes: { target: '_blank' }
+      },
+      {
+        name: 'Password Input',
+        url: 'https://coreui.io/angular/docs/forms/password-input/',
+        icon: 'nav-icon-bullet',
+        badge: {
+          color: 'danger',
+          text: 'PRO'
+        },
+        attributes: { target: '_blank' }
+      },
+      {
+        name: 'Range',
+        url: '/forms/range',
+        icon: 'nav-icon-bullet'
+      },
+      {
+        name: 'Range Slider',
+        url: 'https://coreui.io/angular/docs/forms/range-slider/',
+        icon: 'nav-icon-bullet',
+        badge: {
+          color: 'danger',
+          text: 'PRO'
+        },
+        attributes: { target: '_blank' }
+      },
+      {
+        name: 'Rating',
+        url: 'https://coreui.io/angular/docs/forms/rating/',
+        icon: 'nav-icon-bullet',
+        badge: {
+          color: 'danger',
+          text: 'PRO'
+        },
+        attributes: { target: '_blank' }
+      },
+      {
+        name: 'Select',
+        url: '/forms/select',
+        icon: 'nav-icon-bullet'
+      },
+      {
+        name: 'Stepper',
+        url: 'https://coreui.io/angular/docs/forms/stepper/',
+        icon: 'nav-icon-bullet',
+        badge: {
+          color: 'danger',
+          text: 'PRO'
+        },
+        attributes: { target: '_blank' }
+      },
+      {
+        name: 'Time Picker',
+        url: 'https://coreui.io/angular/docs/forms/time-picker/',
+        icon: 'nav-icon-bullet',
+        badge: {
+          color: 'danger',
+          text: 'PRO'
+        },
+        attributes: { target: '_blank' }
+      },
+      {
+        name: 'Layout',
+        url: '/forms/layout',
+        icon: 'nav-icon-bullet'
+      },
+      {
+        name: 'Validation',
+        url: '/forms/validation',
+        icon: 'nav-icon-bullet'
+      }
+    ]
+  },
   // {
   //   name: 'Charts',
   //   iconComponent: { name: 'cil-chart-pie' },
