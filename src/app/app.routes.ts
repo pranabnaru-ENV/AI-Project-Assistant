@@ -50,6 +50,10 @@ export const routes: Routes = [
         loadChildren: () => import('./views/charts/routes').then((m) => m.routes)
       },
       {
+        path: 'projects',
+        loadChildren: () => import('./views/projects/routes').then((m) => m.routes)
+      },
+      {
         path: 'pages',
         loadChildren: () => import('./views/pages/routes').then((m) => m.routes)
       }
@@ -82,6 +86,6 @@ export const routes: Routes = [
     data: {
       title: 'Register Page'
     }
-  },
+  },  
   { path: '**', redirectTo: 'dashboard' }
 ];

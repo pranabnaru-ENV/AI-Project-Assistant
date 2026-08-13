@@ -32,12 +32,12 @@ export const navItems: INavData[] = [
   {
     name: 'Projects',
     url: '/projects',
-    iconComponent: { name: 'cil-folder' }
+    iconComponent: { name: 'cil-star' }
   },
   {
     name: 'Meetings',
     url: '/meetings',
-    iconComponent: { name: 'cil-folder' },
+    iconComponent: { name: 'cil-star' }
   },
   {
     name: 'Meeting Details',
